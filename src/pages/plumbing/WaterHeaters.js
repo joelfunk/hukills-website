@@ -26,6 +26,7 @@ function WaterHeaters() {
             </div>
             <div className="col-md-4">
                 <img src="/images/plumbing/tankless.jpg" alt="Tankless Water Heater" className="img-fluid rounded mb-4"/>
+                <img src="/images/plumbing/water-heater.webp" alt="Water Heater" className="img-fluid rounded mb-4"/>
             </div>
           </div>
       </div>
