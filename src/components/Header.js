@@ -2,13 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-function Header() {
+function Header({ site }) {
   const { t, i18n } = useTranslation(); // Hook to access translations
 
   const toggleLanguage = () => {
     const newLang = i18n.language === 'en' ? 'es' : 'en';
     i18n.changeLanguage(newLang);
   };
+
+  // Determine phone number based on site
+  const phoneNumber = site === 'Fort Worth' ? '817-672-7555' : '541-854-0296';
 
   return (
     <header data-bs-theme="light">
@@ -64,16 +67,18 @@ function Header() {
                   <li><a className="dropdown-item" href="#">{t('nav.leakDetection.cameraVideoInspection')}</a></li>
                 </ul>
               </li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  {t('nav.foundations.title')}
-                </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">{t('nav.foundations.foundationRepair')}</a></li>
-                  <li><a className="dropdown-item" href="#">{t('nav.foundations.crawlSpace')}</a></li>
-                  <li><a className="dropdown-item" href="#">{t('nav.foundations.basementRepair')}</a></li>
-                </ul>
-              </li>
+              {site === 'Oregon' && (
+                <li className="nav-item dropdown">
+                  <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    {t('nav.foundations.title')}
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li><a className="dropdown-item" href="#">{t('nav.foundations.foundationRepair')}</a></li>
+                    <li><a className="dropdown-item" href="#">{t('nav.foundations.crawlSpace')}</a></li>
+                    <li><a className="dropdown-item" href="#">{t('nav.foundations.basementRepair')}</a></li>
+                  </ul>
+                </li>
+              )}
               <li className="nav-item hide-in-more"><a className="nav-link" href="#">{t('nav.septicPumping')}</a></li>
               <li className="nav-item hide-in-more"><a className="nav-link" href="#">{t('nav.excavation')}</a></li>
               <li className="nav-item dropdown">
@@ -113,7 +118,7 @@ function Header() {
             <div className="d-flex align-items-center ms-5 me-5">
               <div className="text-start">
                 <div className="text-muted fs-5">{t('nav.requestService')}</div>
-                <a href="tel:817-672-7555" className="text-dark fw-bold text-decoration-none fs-3">817-672-7555</a>
+                <a href={`tel:${phoneNumber}`} className="text-dark fw-bold text-decoration-none fs-3">{phoneNumber}</a>
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@ function Footer() {
       <div className="container">
         <p className="float-end mb-0"><a href="#" className="text-white">Back to top</a></p>
         <p className="mb-0">
-          &copy; 2027 Hukill's, Inc. &middot;
+          &copy; 2028 Hukill's, Inc. &middot;
         </p>
       </div>
     </footer>

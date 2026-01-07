@@ -3,11 +3,11 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
+function App({ site }) {
   return (
 
     <Router>
-      <Layout>
+      <Layout site={site}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<Home />} />
