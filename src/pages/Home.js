@@ -165,7 +165,7 @@ function Home() {
             </div>
 
             {/* Right Column - 3 Features */}
-            <div className="col-md-3 offset-md-1">
+            <div className="col-md-3 offset-md-1 mt-sm-5">
               <div className="mb-4 d-flex align-items-start">
                 <i className="fas fa-dollar-sign text-danger me-3 fs-2"></i>
                 <div>
@@ -194,12 +194,16 @@ function Home() {
 
       <div className="container mt-5">
         <div className="row">
-          <div className="col-md-5">
-            <h2 className="service-title">Our Loyal Customers</h2>
-            <p className="service-description">For over 40 years, we've been proud to serve the Fort Worth, Weatherford, and surrounding communities with exceptional plumbing, restoration, and remodeling services. Our success is built on the trust and loyalty of our customers who continue to choose us for their home and business needs. We're grateful for every review, referral, and repeat customer who has helped us grow into the company we are today. Your satisfaction is our top priority, and we're committed to earning your trust with every job we complete.</p>
-          </div>
-          <div className="col-md-5 offset-md-2">
-            <iframe src="https://reviews-iframe.podium.com?locationSlug=Iv5jtR4sCbAHWvM1diPe4Q&count=50" frameBorder="0" width="500" height="500"></iframe>
+          <div className="col-12">
+            <h2 className="service-title text-center mb-4">Our Loyal Customers</h2>
+            <div className="d-flex justify-content-center">
+              <iframe 
+                src="https://reviews-iframe.podium.com?locationSlug=Iv5jtR4sCbAHWvM1diPe4Q&count=50" 
+                frameBorder="0" 
+                style={{width: '100%', maxWidth: '500px', height: '500px', border: 'none'}}
+                title="Customer Reviews"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>

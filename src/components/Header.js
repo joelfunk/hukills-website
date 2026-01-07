@@ -35,48 +35,72 @@ function Header() {
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Plumbing
+                  {t('nav.plumbing.title')}
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Plumbing</a></li>
-                  <li><a className="dropdown-item" href="#">Water Heaters</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.plumbing.plumbing')}</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.plumbing.waterHeaters')}</a></li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Drain Cleaning
+                  <span className="text-full-width">{t('nav.drainCleaning.title')}</span>
+                  <span className="text-narrow-width">{t('nav.drainCleaning.titleShort')}</span>
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Drain Cleaning</a></li>
-                  <li><a className="dropdown-item" href="#">Hydrojetting</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.drainCleaning.drainCleaning')}</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.drainCleaning.hydrojetting')}</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.drainCleaning.greaseTraps')}</a></li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Leak Detection
+                  {t('nav.leakDetection.title')}
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Leak detection</a></li>
-                  <li><a className="dropdown-item" href="#">Water line leak detection</a></li>
-                  <li><a className="dropdown-item" href="#">Utility & line locating</a></li>
-                  <li><a className="dropdown-item" href="#">Camera & video inspection</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.leakDetection.leakDetection')}</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.leakDetection.waterLineLeakDetection')}</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.leakDetection.utilityLineLocating')}</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.leakDetection.cameraVideoInspection')}</a></li>
                 </ul>
               </li>
-              <li className="nav-item"><a className="nav-link" href="#">Septic Pumping</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Excavation</a></li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Restoration/Remodel
+                  {t('nav.foundations.title')}
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Kitchen & Bath Remodel</a></li>
-                  <li><a className="dropdown-item" href="#">Cabinet Design & Install</a></li>
-                  <li><a className="dropdown-item" href="#">Interior & Exterior Painting</a></li>
-                  <li><a className="dropdown-item" href="#">Flooring Installation</a></li>
-                  <li><a className="dropdown-item" href="#">Photo Gallery</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.foundations.foundationRepair')}</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.foundations.crawlSpace')}</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.foundations.basementRepair')}</a></li>
                 </ul>
               </li>
-              <li className="nav-item"><a className="nav-link" href="#">Contact Us</a></li>
+              <li className="nav-item hide-in-more"><a className="nav-link" href="#">{t('nav.septicPumping')}</a></li>
+              <li className="nav-item hide-in-more"><a className="nav-link" href="#">{t('nav.excavation')}</a></li>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span className="text-full-width">{t('nav.restoration.title')}</span>
+                  <span className="text-narrow-width">{t('nav.restoration.titleShort')}</span>
+                </a>
+                <ul className="dropdown-menu">
+                  <li><a className="dropdown-item" href="#">{t('nav.restoration.kitchenBathRemodel')}</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.restoration.cabinetDesignInstall')}</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.restoration.interiorExteriorPainting')}</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.restoration.flooringInstallation')}</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.restoration.graniteCountertops')}</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.restoration.photoGallery')}</a></li>
+                </ul>
+              </li>
+              <li className="nav-item hide-in-more"><a className="nav-link" href="#">{t('nav.contact')}</a></li>
+              <li className="nav-item dropdown show-in-more">
+                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  {t('nav.more')}
+                </a>
+                <ul className="dropdown-menu">
+                  <li><a className="dropdown-item" href="#">{t('nav.septicPumping')}</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.excavation')}</a></li>
+                  <li><a className="dropdown-item" href="#">{t('nav.contact')}</a></li>
+                </ul>
+              </li>
               <li className="nav-item">
                 <button 
                   className="btn btn-sm btn-outline-danger ms-2" 
@@ -88,7 +112,7 @@ function Header() {
             </ul>
             <div className="d-flex align-items-center ms-5 me-5">
               <div className="text-start">
-                <div className="text-muted fs-5">Request a Service</div>
+                <div className="text-muted fs-5">{t('nav.requestService')}</div>
                 <a href="tel:817-672-7555" className="text-dark fw-bold text-decoration-none fs-3">817-672-7555</a>
               </div>
             </div>

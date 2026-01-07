@@ -92,6 +92,76 @@ body {
   margin-right: 0.2rem;
 }
 
+/* Prevent wrapping for phone number and request service section */
+.navbar .d-flex.align-items-center {
+  white-space: nowrap;
+}
+
+.navbar .d-flex.align-items-center .text-muted,
+.navbar .d-flex.align-items-center a[href^="tel"] {
+  white-space: nowrap;
+}
+
+/* Allow menu items to wrap on smaller screens */
+@media (max-width: 991px) {
+  .navbar-nav .nav-link,
+  .navbar-nav .dropdown-toggle {
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.2;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* Show/hide More dropdown based on screen size */
+.show-in-more {
+  display: none;
+}
+
+/* Show/hide text based on screen width */
+.text-narrow-width {
+  display: none;
+}
+
+@media (max-width: 1640px) {
+  .hide-in-more {
+    display: none !important;
+  }
+  
+  .show-in-more {
+    display: block;
+  }
+  
+  .text-full-width {
+    display: none;
+  }
+  
+  .text-narrow-width {
+    display: inline;
+  }
+  
+  /* Reduce logo size */
+  .navbar-brand img {
+    height: 45px !important;
+  }
+  
+  /* Reduce phone number section sizes */
+  .navbar .d-flex.align-items-center .text-muted {
+    font-size: 0.875rem !important;
+  }
+  
+  .navbar .d-flex.align-items-center a[href^="tel"] {
+    font-size: 1.5rem !important;
+  }
+  
+  /* Reduce margins */
+  .navbar .d-flex.align-items-center {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+}
+
 /* Hero Section */
 .hero-section {
   width: 100%;
@@ -106,10 +176,25 @@ body {
   position: relative;
 }
 
+/* Add overlay for better text contrast */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .hero-content {
   max-width: 600px;
   color: white;
   padding: 40px 0;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-subtitle {
@@ -150,6 +235,16 @@ body {
   
   .hero-section {
     min-height: 500px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .hero-section {
+    background-position: right 55%;
+  }
+  
+  .hero-section::before {
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 
