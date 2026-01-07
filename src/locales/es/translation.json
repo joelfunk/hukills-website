@@ -1,0 +1,18 @@
+{
+  "nav":  {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "contact":  "Contacto"
+  },
+  "home": {
+    "title": "Bienvenido a Mi Sitio Estático",
+    "description": "Este es el contenido de la página de inicio."
+  },
+  "about": {
+    "title":  "Sobre Nosotros",
+    "description": "Aprende más sobre nuestro sitio."
+  },
+  "footer": {
+    "copyright": "© 2026 Mi Sitio Estático. Todos los derechos reservados."
+  }
+}

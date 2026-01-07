@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "title":  "Welcome to My Static Site",
+    "description": "This is the home page content."
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Learn more about our site."
+  },
+  "footer": {
+    "copyright": "© 2026 My Static Site. All rights reserved."
+  }
+}
