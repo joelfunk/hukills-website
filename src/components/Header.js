@@ -18,7 +18,7 @@ function Header({ site }) {
       <nav className="navbar navbar-expand-md navbar-light fixed-top bg-white">
         <div className="container-fluid">
           <a className="navbar-brand ms-5 my-2" href="#">
-            <img src="images/hukills-logo.png" alt="Huckels Logo" height="60" />
+            <img src="/images/hukills-logo.png" alt="Hukills Logo" height="60" />
           </a>
           <button
             className="navbar-toggler"
@@ -34,15 +34,15 @@ function Header({ site }) {
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <ul className="navbar-nav ms-auto mb-2 mb-md-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">{t('nav.home')}</a>
+                <Link className="nav-link" to="/">{t('nav.home')}</Link>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   {t('nav.plumbing.title')}
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">{t('nav.plumbing.plumbing')}</a></li>
-                  <li><a className="dropdown-item" href="#">{t('nav.plumbing.waterHeaters')}</a></li>
+                  <li><Link className="dropdown-item" to="/plumbing">{t('nav.plumbing.plumbing')}</Link></li>
+                  <li><Link className="dropdown-item" to="/plumbing/water-heaters">{t('nav.plumbing.waterHeaters')}</Link></li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
