@@ -33,19 +33,6 @@ function Header() {
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">{t('nav.home')}</a>
               </li>
-              <li className="nav-item"><a className="nav-link" href="#">Restoration</a></li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Remodel
-                </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Kitchen & Bath Remodel</a></li>
-                  <li><a className="dropdown-item" href="#">Cabinet Design & Install</a></li>
-                  <li><a className="dropdown-item" href="#">Interior & Exterior Painting</a></li>
-                  <li><a className="dropdown-item" href="#">Flooring Installation</a></li>
-                  <li><a className="dropdown-item" href="#">Photo Gallery</a></li>
-                </ul>
-              </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Plumbing
@@ -75,7 +62,20 @@ function Header() {
                   <li><a className="dropdown-item" href="#">Camera & video inspection</a></li>
                 </ul>
               </li>
+              <li className="nav-item"><a className="nav-link" href="#">Septic Pumping</a></li>
               <li className="nav-item"><a className="nav-link" href="#">Excavation</a></li>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Restoration/Remodel
+                </a>
+                <ul className="dropdown-menu">
+                  <li><a className="dropdown-item" href="#">Kitchen & Bath Remodel</a></li>
+                  <li><a className="dropdown-item" href="#">Cabinet Design & Install</a></li>
+                  <li><a className="dropdown-item" href="#">Interior & Exterior Painting</a></li>
+                  <li><a className="dropdown-item" href="#">Flooring Installation</a></li>
+                  <li><a className="dropdown-item" href="#">Photo Gallery</a></li>
+                </ul>
+              </li>
               <li className="nav-item"><a className="nav-link" href="#">Contact Us</a></li>
               <li className="nav-item">
                 <button 
