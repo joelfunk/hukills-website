@@ -1,0 +1,295 @@
+body {
+  padding-bottom: 0;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* Navigation menu items styling */
+.navbar-nav .nav-link {
+  font-weight: bold;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+/* Prevent wrapping for phone number and request service section */
+.navbar .d-flex.align-items-center {
+  white-space: nowrap;
+}
+
+.navbar .d-flex.align-items-center .text-muted,
+.navbar .d-flex.align-items-center a[href^="tel"] {
+  white-space: nowrap;
+}
+
+/* Allow menu items to wrap on smaller screens */
+@media (max-width: 991px) {
+  .navbar-nav .nav-link,
+  .navbar-nav .dropdown-toggle {
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.2;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* Show/hide More dropdown based on screen size */
+.show-in-more {
+  display: none;
+}
+
+/* Show/hide text based on screen width */
+.text-narrow-width {
+  display: none;
+}
+
+@media (max-width: 1640px) {
+  .hide-in-more {
+    display: none !important;
+  }
+  
+  .show-in-more {
+    display: block;
+  }
+  
+  .text-full-width {
+    display: none;
+  }
+  
+  .text-narrow-width {
+    display: inline;
+  }
+  
+  /* Reduce logo size */
+  .navbar-brand img {
+    height: 45px !important;
+  }
+  
+  /* Reduce phone number section sizes */
+  .navbar .d-flex.align-items-center .text-muted {
+    font-size: 0.875rem !important;
+  }
+  
+  .navbar .d-flex.align-items-center a[href^="tel"] {
+    font-size: 1.5rem !important;
+  }
+  
+  /* Reduce margins */
+  .navbar .d-flex.align-items-center {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  min-height: 600px;
+  background-image: url('/images/hero3.png');
+  background-size: cover;
+  background-position: 50% 55%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  position: relative;
+}
+
+/* Add overlay for better text contrast */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-content {
+  max-width: 600px;
+  color: white;
+  padding: 40px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-subtitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-btn {
+  padding: 12px 40px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-section {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .hero-section {
+    background-position: right 55%;
+  }
+  
+  .hero-section::before {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Service Tabs Styling */
+#list-tab .list-group-item {
+  background-color: #dc3545;
+  color: white;
+  font-weight: bold;
+  font-size: 1.125rem;
+  border: 1px solid #c82333;
+  margin-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+#list-tab .list-group-item:hover {
+  background-color: #c82333;
+  color: white;
+}
+
+#list-tab .list-group-item.active {
+  background-color: white;
+  color: #333;
+  border-color: #dc3545;
+}
+
+/* Service Content Styling */
+.services h1 {
+  color: #dc3545;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.services h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.services h3 {
+  color: #666;
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.services p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.service-btn {
+  background-color: #dc3545;
+  color: white;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.service-btn:hover {
+  background-color: #c82333;
+  color: white;
+}
+
+.service-title {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* Page Title Styling */
+.page-title {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 3rem;
+}
+
+.page-title.plumbing {
+  background-image: url('/images/services-plumbing.jpg');
+}
+
+.page-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(220, 53, 69, 0.6);
+  z-index: 1;
+}
+
+.page-title h1 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Layout padding for fixed navbar */
+.main-content {
+  padding-top: 100px;
+}

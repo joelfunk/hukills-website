@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "hukills",
-    "public": "build",
+    "public": "out",
     "ignore": [
       "firebase.json",
       "**/.*",

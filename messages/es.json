@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "contact": "Contáctenos",
+    "plumbing": {
+      "title": "Plomería",
+      "plumbing": "Plomería",
+      "waterHeaters": "Calentadores de Agua"
+    },
+    "drainCleaning": {
+      "title": "Limpieza de Drenajes",
+      "titleShort": "Drenajes",
+      "drainCleaning": "Limpieza de Drenajes",
+      "hydrojetting": "Hidrochorro",
+      "greaseTraps": "Trampas de Grasa"
+    },
+    "leakDetection": {
+      "title": "Detección de Fugas",
+      "leakDetection": "Detección de fugas",
+      "waterLineLeakDetection": "Detección de fugas en líneas de agua",
+      "utilityLineLocating": "Localización de servicios públicos y líneas",
+      "cameraVideoInspection": "Inspección con cámara y video"
+    },
+    "foundations": {
+      "title": "Cimientos",
+      "foundationRepair": "Reparación de Cimientos",
+      "crawlSpace": "Espacio de Acceso",
+      "basementRepair": "Reparación de Sótanos"
+    },
+    "septicPumping": "Bombeo Séptico",
+    "excavation": "Excavación",
+    "restoration": {
+      "title": "Restauración/Remodelación",
+      "titleShort": "Restauración",
+      "kitchenBathRemodel": "Remodelación de Cocina y Baño",
+      "cabinetDesignInstall": "Diseño e Instalación de Gabinetes",
+      "interiorExteriorPainting": "Pintura Interior y Exterior",
+      "flooringInstallation": "Instalación de Pisos",
+      "graniteCountertops": "Encimeras de Granito/Piedra",
+      "photoGallery": "Galería de Fotos"
+    },
+    "more": "Más",
+    "requestService": "Solicitar un Servicio"
+  },
+  "home": {
+    "title": "Bienvenido a Mi Sitio Estático",
+    "description": "Este es el contenido de la página de inicio."
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "description": "Aprende más sobre nuestro sitio."
+  },
+  "footer": {
+    "copyright": "© 2026 Mi Sitio Estático. Todos los derechos reservados."
+  }
+}

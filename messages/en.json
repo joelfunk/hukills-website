@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact Us",
+    "plumbing": {
+      "title": "Plumbing",
+      "plumbing": "Plumbing",
+      "waterHeaters": "Water Heaters"
+    },
+    "drainCleaning": {
+      "title": "Drain Cleaning",
+      "titleShort": "Drains",
+      "drainCleaning": "Drain Cleaning",
+      "hydrojetting": "Hydrojetting",
+      "greaseTraps": "Grease Traps"
+    },
+    "leakDetection": {
+      "title": "Leak Detection",
+      "leakDetection": "Leak detection",
+      "waterLineLeakDetection": "Water line leak detection",
+      "utilityLineLocating": "Utility & line locating",
+      "cameraVideoInspection": "Camera & video inspection"
+    },
+    "foundations": {
+      "title": "Foundations",
+      "foundationRepair": "Foundation Repair",
+      "crawlSpace": "Crawl Space",
+      "basementRepair": "Basement Repair"
+    },
+    "septicPumping": "Septic Pumping",
+    "excavation": "Excavation",
+    "restoration": {
+      "title": "Restoration/Remodel",
+      "titleShort": "Restoration",
+      "kitchenBathRemodel": "Kitchen & Bath Remodel",
+      "cabinetDesignInstall": "Cabinet Design & Install",
+      "interiorExteriorPainting": "Interior & Exterior Painting",
+      "flooringInstallation": "Flooring Installation",
+      "graniteCountertops": "Granite/Stone Countertops",
+      "photoGallery": "Photo Gallery"
+    },
+    "more": "More",
+    "requestService": "Request a Service"
+  },
+  "home": {
+    "title": "Welcome to My Static Site",
+    "description": "This is the home page content."
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Learn more about our site."
+  },
+  "footer": {
+    "copyright": "© 2026 My Static Site. All rights reserved."
+  }
+}
