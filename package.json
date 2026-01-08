@@ -1,5 +1,5 @@
 {
-  "name": "hukills-website-nextjs",
+  "name": "hukills-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "next start",
     "serve": "npx http-server out -p 8000",
     "lint": "next lint",
-    "deploy": "next build && firebase deploy --only hosting:hukills"
+    "deploy": "next build && rm -f out/index.html && firebase deploy --only hosting:hukills,functions"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",
