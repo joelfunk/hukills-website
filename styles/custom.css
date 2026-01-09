@@ -267,6 +267,14 @@ body {
   background-image: url('/images/services-plumbing.jpg');
 }
 
+.page-title.drain-cleaning {
+  background-image: url('/images/drain-cleaning/services-drain-cleaning.jpg');
+}
+
+.page-title.leak-detection {
+  background-image: url('/images/leak-detection/services-leak-detection.jpg');
+}
+
 .page-title::before {
   content: '';
   position: absolute;

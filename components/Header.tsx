@@ -53,9 +53,9 @@ export default function Header({ site }: HeaderProps) {
                   <span className="text-narrow-width">{t('nav.drainCleaning.titleShort')}</span>
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">{t('nav.drainCleaning.drainCleaning')}</a></li>
-                  <li><a className="dropdown-item" href="#">{t('nav.drainCleaning.hydrojetting')}</a></li>
-                  <li><a className="dropdown-item" href="#">{t('nav.drainCleaning.greaseTraps')}</a></li>
+                  <li><Link className="dropdown-item" href="/drain-cleaning">{t('nav.drainCleaning.drainCleaning')}</Link></li>
+                  <li><Link className="dropdown-item" href="/drain-cleaning/hydrojetting">{t('nav.drainCleaning.hydrojetting')}</Link></li>
+                  <li><Link className="dropdown-item" href="/drain-cleaning/grease-traps">{t('nav.drainCleaning.greaseTraps')}</Link></li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
@@ -63,10 +63,10 @@ export default function Header({ site }: HeaderProps) {
                   {t('nav.leakDetection.title')}
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">{t('nav.leakDetection.leakDetection')}</a></li>
-                  <li><a className="dropdown-item" href="#">{t('nav.leakDetection.waterLineLeakDetection')}</a></li>
-                  <li><a className="dropdown-item" href="#">{t('nav.leakDetection.utilityLineLocating')}</a></li>
-                  <li><a className="dropdown-item" href="#">{t('nav.leakDetection.cameraVideoInspection')}</a></li>
+                  <li><Link className="dropdown-item" href="/leak-detection">{t('nav.leakDetection.leakDetection')}</Link></li>
+                  <li><Link className="dropdown-item" href="/leak-detection/water-line-leak-detection">{t('nav.leakDetection.waterLineLeakDetection')}</Link></li>
+                  <li><Link className="dropdown-item" href="/leak-detection/utility-line-locating">{t('nav.leakDetection.utilityLineLocating')}</Link></li>
+                  <li><Link className="dropdown-item" href="/leak-detection/camera-video-inspection">{t('nav.leakDetection.cameraVideoInspection')}</Link></li>
                 </ul>
               </li>
               {site === 'Oregon' && (
