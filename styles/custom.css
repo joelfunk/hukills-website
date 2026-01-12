@@ -275,6 +275,22 @@ body {
   background-image: url('/images/leak-detection/services-leak-detection.jpg');
 }
 
+.page-title.septic {
+  background-image: url('/images/septic/septic-services.jpg');
+}
+
+.page-title.excavation {
+  background-image: url('/images/excavation/excavation-hero.jpg');
+}
+
+.page-title.restoration {
+  background-image: url('/images/restoration/renovation-banner.jpg');
+}
+
+.page-title.contact {
+  background-image: url('/images/services-plumbing.jpg');
+}
+
 .page-title::before {
   content: '';
   position: absolute;

@@ -81,31 +81,41 @@ export default function Header({ site }: HeaderProps) {
                   </ul>
                 </li>
               )}
-              <li className="nav-item hide-in-more"><a className="nav-link" href="#">{t('nav.septicPumping')}</a></li>
-              <li className="nav-item hide-in-more"><a className="nav-link" href="#">{t('nav.excavation')}</a></li>
+              <li className="nav-item dropdown hide-in-more">
+                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  {t('nav.septicPumping')}
+                </a>
+                <ul className="dropdown-menu">
+                  <li><Link className="dropdown-item" href="/septic-pumping">{t('nav.septicPumping')}</Link></li>
+                  <li><Link className="dropdown-item" href="/septic-pumping/grease-traps">{t('nav.septic.greaseTraps')}</Link></li>
+                  <li><Link className="dropdown-item" href="/septic-pumping/septic-installation">{t('nav.septic.septicInstallation')}</Link></li>
+                </ul>
+              </li>
+              <li className="nav-item hide-in-more"><Link className="nav-link" href="/excavation">{t('nav.excavation')}</Link></li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <span className="text-full-width">{t('nav.restoration.title')}</span>
                   <span className="text-narrow-width">{t('nav.restoration.titleShort')}</span>
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">{t('nav.restoration.kitchenBathRemodel')}</a></li>
-                  <li><a className="dropdown-item" href="#">{t('nav.restoration.cabinetDesignInstall')}</a></li>
-                  <li><a className="dropdown-item" href="#">{t('nav.restoration.interiorExteriorPainting')}</a></li>
-                  <li><a className="dropdown-item" href="#">{t('nav.restoration.flooringInstallation')}</a></li>
-                  <li><a className="dropdown-item" href="#">{t('nav.restoration.graniteCountertops')}</a></li>
-                  <li><a className="dropdown-item" href="#">{t('nav.restoration.photoGallery')}</a></li>
+                  <li><Link className="dropdown-item" href="/restoration">{t('nav.restoration.title')}</Link></li>
+                  <li><Link className="dropdown-item" href="/restoration/kitchen-bath-remodel">{t('nav.restoration.kitchenBathRemodel')}</Link></li>
+                  <li><Link className="dropdown-item" href="/restoration/cabinet-design-install">{t('nav.restoration.cabinetDesignInstall')}</Link></li>
+                  <li><Link className="dropdown-item" href="/restoration/interior-exterior-painting">{t('nav.restoration.interiorExteriorPainting')}</Link></li>
+                  <li><Link className="dropdown-item" href="/restoration/flooring-installation">{t('nav.restoration.flooringInstallation')}</Link></li>
+                  <li><Link className="dropdown-item" href="/restoration/granite-countertops">{t('nav.restoration.graniteCountertops')}</Link></li>
+                  <li><Link className="dropdown-item" href="/restoration/photo-gallery">{t('nav.restoration.photoGallery')}</Link></li>
                 </ul>
               </li>
-              <li className="nav-item hide-in-more"><a className="nav-link" href="#">{t('nav.contact')}</a></li>
+              <li className="nav-item hide-in-more"><Link className="nav-link" href="/contact">{t('nav.contact')}</Link></li>
               <li className="nav-item dropdown show-in-more">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   {t('nav.more')}
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">{t('nav.septicPumping')}</a></li>
-                  <li><a className="dropdown-item" href="#">{t('nav.excavation')}</a></li>
-                  <li><a className="dropdown-item" href="#">{t('nav.contact')}</a></li>
+                  <li><Link className="dropdown-item" href="/septic-pumping">{t('nav.septicPumping')}</Link></li>
+                  <li><Link className="dropdown-item" href="/excavation">{t('nav.excavation')}</Link></li>
+                  <li><Link className="dropdown-item" href="/contact">{t('nav.contact')}</Link></li>
                 </ul>
               </li>
               <li className="nav-item">

@@ -29,6 +29,10 @@
       "basementRepair": "Basement Repair"
     },
     "septicPumping": "Septic Pumping",
+    "septic": {
+      "greaseTraps": "Grease Traps",
+      "septicInstallation": "Septic Installation"
+    },
     "excavation": "Excavation",
     "restoration": {
       "title": "Restoration/Remodel",

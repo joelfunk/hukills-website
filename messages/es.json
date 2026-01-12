@@ -29,6 +29,10 @@
       "basementRepair": "Reparación de Sótanos"
     },
     "septicPumping": "Bombeo Séptico",
+    "septic": {
+      "greaseTraps": "Trampas de Grasa",
+      "septicInstallation": "Instalación Séptica"
+    },
     "excavation": "Excavación",
     "restoration": {
       "title": "Restauración/Remodelación",
