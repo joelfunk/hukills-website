@@ -31,7 +31,7 @@ export default async function SepticPumping({ params }: Props) {
             </div>
           </div>
 
-          <div className="col-md-6 offset-md-1 services">
+          <div className="col-md-6 offset-md-1 services mt-5 mt-md-0">
             <div className="tab-content" id="nav-tabContent">
               <div className="tab-pane fade show active" id="list-septic-pumping" role="tabpanel" aria-labelledby="list-septic-pumping-list">
                 <h1>Hukill&apos;s Septic Pumping Services</h1>

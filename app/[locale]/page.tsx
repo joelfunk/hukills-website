@@ -103,7 +103,7 @@ export default async function Home({ params }: Props) {
               <img src="/images/plumber.jpg" alt="Professional Plumber" className="img-fluid rounded" />
             </div>
 
-            <div className="col-md-3 offset-md-1 mt-sm-5">
+            <div className="col-md-3 offset-md-1 mt-5 mt-md-0">
               <div className="mb-4 d-flex align-items-start">
                 <i className="fas fa-dollar-sign text-danger me-3 fs-2"></i>
                 <div>
@@ -185,7 +185,7 @@ export default async function Home({ params }: Props) {
                 </iframe>
               </div>
             </div>
-            <div className="col-md-6 offset-md-1">
+            <div className="col-md-6 offset-md-1 mt-5 mt-md-0">
               <WebForm />
             </div>
           </div>

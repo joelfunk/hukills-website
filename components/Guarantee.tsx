@@ -1,6 +1,6 @@
 export default function Guarantee() {
   return (
-    <div className="col-md-5 offset-md-1">
+    <div className="col-md-5 offset-md-1 mt-5 mt-md-0">
       <div className="mb-4 d-flex align-items-start">
         <div className="text-danger me-3" style={{width: '40px', textAlign: 'center'}}>
           <i className="fas fa-shield-alt fs-2"></i>

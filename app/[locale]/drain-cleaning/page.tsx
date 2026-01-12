@@ -31,7 +31,7 @@ export default async function DrainCleaning({ params }: Props) {
             </div>
           </div>
 
-          <div className="col-md-6 offset-md-1 services">
+          <div className="col-md-6 offset-md-1 services mt-5 mt-md-0">
             <div className="tab-content" id="nav-tabContent">
               <div className="tab-pane fade show active" id="list-drain-cleaning" role="tabpanel" aria-labelledby="list-drain-cleaning-list">
                 <h1>Drain Cleaning Services</h1>

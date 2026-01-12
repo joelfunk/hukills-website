@@ -35,7 +35,7 @@ export default async function Restoration({ params }: Props) {
             </div>
           </div>
 
-          <div className="col-md-6 offset-md-1 services">
+          <div className="col-md-6 offset-md-1 services mt-5 mt-md-0">
             <div className="tab-content" id="nav-tabContent">
               <div className="tab-pane fade show active" id="list-restoration" role="tabpanel" aria-labelledby="list-restoration-list">
                 <h1>Hukill&apos;s Restoration</h1>

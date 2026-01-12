@@ -32,7 +32,7 @@ export default async function LeakDetection({ params }: Props) {
             </div>
           </div>
 
-          <div className="col-md-6 offset-md-1 services">
+          <div className="col-md-6 offset-md-1 services mt-5 mt-md-0">
             <div className="tab-content" id="nav-tabContent">
               <div className="tab-pane fade show active" id="list-leak-detection" role="tabpanel" aria-labelledby="list-leak-detection-list">
                 <h1>Leak Detection Services</h1>

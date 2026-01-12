@@ -55,7 +55,26 @@ body {
   display: none;
 }
 
-@media (max-width: 1640px) {
+/* Mobile nav - show all items, hide More menu */
+@media (max-width: 767px) {
+  .hide-in-more {
+    display: block !important;
+  }
+  
+  .show-in-more {
+    display: none !important;
+  }
+  
+  .text-full-width {
+    display: inline;
+  }
+  
+  .text-narrow-width {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1640px) {
   .hide-in-more {
     display: none !important;
   }

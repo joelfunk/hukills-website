@@ -52,6 +52,7 @@ export default async function KitchenBathRemodel({ params }: Props) {
             </ul>
           </div>
           <div className="col-md-4">
+            <img src="/images/restoration/kitchen-remodel.jpg" alt="Kitchen Remodel" className="img-fluid rounded mb-4"/>
             <img src="/images/restoration/kitchen.jpg" alt="Kitchen Remodeling" className="img-fluid rounded mb-4"/>
             <img src="/images/restoration/bathroom.jpg" alt="Bathroom Remodeling" className="img-fluid rounded mb-4"/>
           </div>
